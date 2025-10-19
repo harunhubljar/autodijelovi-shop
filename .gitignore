@@ -19,6 +19,6 @@ yarn-error.log
 
 # Documentation - ne uploaduj na GitHub
 *.md
-README.md
+!README.md
 CONTRIBUTING.md
 LICENSE.md
