@@ -1,0 +1,48 @@
+================================================================
+   AUTODIJELOVI SHOP - BRZO UPUTSTVO ZA POKRETANJE
+================================================================
+
+1. INSTALIRAJTE:
+   - XAMPP: https://www.apachefriends.org/
+   - Composer: https://getcomposer.org/
+
+2. POKRENITE XAMPP:
+   - Otvorite XAMPP Control Panel
+   - Start Apache
+   - Start MySQL
+
+3. U FOLDERU PROJEKTA OTVORITE COMMAND PROMPT I POKRENITE:
+
+   composer install
+   copy .env.example .env
+   php artisan key:generate
+   php artisan storage:link
+
+4. KREIRAJTE BAZU:
+   - Otvorite: http://localhost/phpmyadmin
+   - Kreirajte bazu: autodijelovi_db
+   - Import-ujte: database/autodijelovi_dump.sql
+
+5. POKRENITE APLIKACIJU:
+
+   php artisan serve
+
+6. OTVORITE U BROWSERU:
+
+   http://localhost:8000
+
+================================================================
+TESTNI KORISNICI:
+================================================================
+
+Admin:
+  Email: admin@autodijelovi.com
+  Lozinka: password
+
+Korisnik:
+  Email: korisnik@autodijelovi.com
+  Lozinka: password
+
+================================================================
+Za detaljnija uputstva pogledajte: README.md ili INSTALACIJA.md
+================================================================
